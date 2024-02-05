@@ -65,9 +65,16 @@ export default function TopNavbar() {
                   My account
                 </p>
               </li>
+              <li className={topBarRight} >
+                <p className='p-0 flex items-center' >
+                  <i className='mr-5'>
+                    <FaUser/>
+                  </i>
+                  Help
+                </p>
+              </li>
             </ul>
           </Col>
-
         </Row>
       </Container>
     </div>
