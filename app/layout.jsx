@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 import "./globals.scss"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
   title: "Create Next App",

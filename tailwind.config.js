@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors:{
 
-        "az-line-acent": ""
+        "az-line-acent": "#ececec",
+        "paragraf-color": "#6d6d73"
 
       },
 
