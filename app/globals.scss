@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  // background-color: black;
+}
+
+.az-navbar-area{
+  padding: 0;
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: all 0.4s;
+
+
+
+}
