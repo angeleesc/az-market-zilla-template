@@ -1,4 +1,5 @@
 "use client"
+import HeroSwiper from "@/components/swipers/hero-swiper/HeroSwiper";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -8,8 +9,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h3>hola angel XD dentro del grupo</h3>
+    <main className="">
+      <HeroSwiper/>
     </main>
   );
 }
