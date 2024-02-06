@@ -5,6 +5,7 @@ export default function HeroSwiperSlide({image, description, productLink }) {
   return (
    <div className='ejemplo'>
    <h3>tjemplo dento de un swiper</h3>
+   <img src={image} alt="xd" />
    </div>
   )
 }

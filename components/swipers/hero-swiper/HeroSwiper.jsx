@@ -5,15 +5,16 @@ import 'swiper/css';
 import HeroSwiperSlide from './HeroSwiperSlide';
 
 const tempImgSwiper = [
+   
 
     {
-        img: "https://res.cloudinary.com/angelplayxd/image/upload/v1707251471/este-sera-precio-samsung-galaxy-s24-seran-mas-baratos-esperado_98_du0dl7.webp",
+        img: "/images/hero2.jpg",
         message: "Ve los nuevos telefonos de samsung",
 
     },
 
     {
-        img: "https://res.cloudinary.com/angelplayxd/image/upload/v1707251471/Apple-WWCD23-Vision-Pro-EyeSight-230605.jpg.large_2x_i0ey2p.jpg",
+        img: "/images/hero1.webp",
         message: "Disponibles las apple vision pro",
 
     },
@@ -33,7 +34,9 @@ export default function HeroSwiper() {
             {
                 tempImgSwiper.map((img, i) => {
                     return <SwiperSlide key={`hero-image-${i}`}>
-                        {`ejemplo ${i}`}
+                        {/* {`ejemplo ${i}`} */}
+                        <HeroSwiperSlide image={img.img} description={img.message} />
+
                     </SwiperSlide>
 
                 })
