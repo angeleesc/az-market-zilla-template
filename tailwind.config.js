@@ -10,7 +10,10 @@ module.exports = {
       colors:{
 
         "az-line-acent": "#ececec",
-        "paragraf-color": "#6d6d73"
+        "paragraf-color": "#6d6d73",
+        "theme-primary": "#09bafa",
+        "theme-primary-shadow": "#0094d1",
+        "theme-primary-tins": "#4bc1fb"
 
       },
 
