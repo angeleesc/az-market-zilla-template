@@ -10,11 +10,11 @@ export default function Layout({children}) {
     <div>
         <div className="az-navbar-area">
             <TopNavbar/>
-            <MiddleBar/> 
-            <BottonNavBAr/>
+            <MiddleBar/>
+            {/* <BottonNavBAr/> */}
         </div>
         {children}
-        
+
         </div>
   )
 }

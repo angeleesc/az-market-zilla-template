@@ -1,0 +1,17 @@
+.az-hero-swiper {
+
+    // background-color: red;
+    position: relative;
+
+    .az-hero-swiper-slide {
+        position: relative;
+        width   : 100%;
+        height  : calc(100vh - 200px);
+
+        img {
+            width     : 100%;
+            height    : 100%;
+            object-fit: cover;
+        }
+    }
+}
