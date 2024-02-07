@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef } from 'react'
+import React, { useCallback, useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 // import "swiper/components/navigation/navigation.scss";
@@ -40,8 +40,26 @@ const tempImgSwiper = [
 
 export default function HeroSwiper() {
 
-    const prevREf = useRef()
-    const nextREf = useRef()
+    // const prevREf = useRef()
+    // const nextREf = useRef()
+    const swiperRef = useRef(null)
+
+    const handlerPev = useCallback(() => {
+        if (!swiperRef.current)
+            return
+        swiperRef.current.swiper.slidePrev()
+    })
+
+    const handlerNext = useCallback(() => {
+
+        if (!swiperRef.current)
+            return
+        swiperRef.current.swiper.slideNext()
+
+    })
+
+    // slideRef.current.swiper.slidePrev();
+    // slideRef.current.swiper.slideNext();
 
     return (
         <div className='w-full bg-slate-400 h az-hero-swiper'>
@@ -56,6 +74,8 @@ export default function HeroSwiper() {
                     prevEl: ".az-hero-prev",
                 }}
                 // modules={[Navigation]}
+                ref={swiperRef}
+                loop
             >
 
                 {
@@ -71,8 +91,8 @@ export default function HeroSwiper() {
 
 
             </Swiper>
-            <button className='az-hero-prev' >Anterios</button>
-            <button className="az-hero-next"  >siguiente</button>
+            <button className='az-hero-prev' onClick={handlerPev} >Anterios</button>
+            <button className="az-hero-next" onClick={handlerNext} >siguiente</button>
         </div>
     )
 }
