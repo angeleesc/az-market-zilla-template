@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import SearchBar from '../search-bar/SearchBar'
 import {FaRegHeart, FaCartShopping} from "react-icons/fa6"
 
+
 export default function MiddleBar() {
     return (
         <div className='py-[30px] bg-gray-300 hidden md:block' >
