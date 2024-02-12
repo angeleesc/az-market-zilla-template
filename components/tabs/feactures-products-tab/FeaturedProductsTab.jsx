@@ -11,14 +11,28 @@ import "../tabs.scss"
 // SmartWatches
 // Headphones
 
+const tabOptions = ["Smartphone",
+    "Computer",
+    "Electronic",
+    "TV and Radio",
+    "Camera",
+    "Accsesories",
+    "SmartWaces",
+    "Headphone"
+]
+
 export default function FeaturedProductsTab() {
 
     const [currentFeaturedproductTab, setCurrentFeaturedproductTab] = useState("Smartphone")
-  
+
 
     return (
         <secction>
-            <FeaturedNavTabBar currentTab={currentFeaturedproductTab} updateTab={setCurrentFeaturedproductTab}  />
+            <FeaturedNavTabBar 
+            currentTab={currentFeaturedproductTab} 
+            updateTab={setCurrentFeaturedproductTab} 
+            TabOptions={tabOptions}
+            />
         </secction>
     )
 }
