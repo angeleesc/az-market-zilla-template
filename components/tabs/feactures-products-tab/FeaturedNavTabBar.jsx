@@ -31,7 +31,8 @@ export default function FeaturedNavTabBar({ currentTab, updateTab, TabOptions })
               text-theme-primary
               pb-[8px]
               cursor-pointer
-              `:`h-full 
+              `:
+              `h-full 
               leading-[64px]
               px-3
               relative
