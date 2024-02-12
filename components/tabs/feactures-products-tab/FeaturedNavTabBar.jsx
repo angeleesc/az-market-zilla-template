@@ -9,7 +9,7 @@ export default function FeaturedNavTabBar({ currentTab, updateTab, TabOptions })
   return (
     <nav className='container'>
       <Row>
-        <ul className='w-full flex justify-center flex-wrap h-16 border-b border-b-gray-300 mb-4'>
+        <ul className='w-full flex justify-center flex-wrap min-h-16 border-b border-b-gray-300 mb-4'>
 
           {
             TabOptions && TabOptions.length && TabOptions.map((tabOption, i) => {

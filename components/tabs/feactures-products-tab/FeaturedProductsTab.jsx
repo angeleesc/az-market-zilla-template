@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import FeaturedNavTabBar from './FeaturedNavTabBar'
 import "../tabs.scss"
+import TabList from './TabList'
 // Smartphone
 // Computer
 // Electronic
@@ -34,7 +35,7 @@ export default function FeaturedProductsTab() {
                 updateTab={setCurrentFeaturedproductTab}
                 TabOptions={tabOptions}
             />
-
+        <TabList/>
         </secction>
     )
 }
