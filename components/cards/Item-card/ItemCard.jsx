@@ -1,8 +1,9 @@
+import StartCalification from '@/components/star-calification/StartCalification'
 import React from 'react'
 
 export default function ItemCard({ item }) {
     return (
-        <div className='w-full max-w-[300px] min-w-[250px] h-[400px] border-gray-400 border'>
+        <div className=' h-[400px] border-gray-400 border relative'>
             {
                 item.thumnails ? <div className='h-[235px] p-2 w-full flex justify-center'>
                     <img src={item.thumnails} alt={`${item.itemName} thumnails`} className='h-full' />
@@ -15,13 +16,19 @@ export default function ItemCard({ item }) {
             <div className='p-4'>
                 {
 
-                    item.category && <h4 className='text-[14px] text-gray-400'>{item.category}</h4>
+                    item.category && <h4 className='text-[14px] text-gray-400 font-normal'>{item.category}</h4>
                 }
 
                 {
-                    <h4 className='text-[18px] text-gray-900 font-bold'>{item.itemName}</h4>
+                    <h4 className='text-[16px] text-gray-900 font-medium'>{item.itemName}</h4>
                 }
 
+            </div>
+
+            <div className='absolute bottom-0 left-0' >
+                {
+                    item.value && <StartCalification value={item.value}/> 
+                }
             </div>
         </div>
     )

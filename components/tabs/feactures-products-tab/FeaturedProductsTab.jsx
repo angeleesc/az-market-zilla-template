@@ -50,6 +50,8 @@ const tabList = {
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
+            category: "Smarphones"
+
 
         },
         {
@@ -58,6 +60,8 @@ const tabList = {
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
+            category: "Smarphones"
+
 
         },
         {
@@ -66,6 +70,8 @@ const tabList = {
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
+            category: "Smarphones"
+
 
         },
         {
@@ -74,6 +80,8 @@ const tabList = {
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
+            category: "Smarphones"
+
 
         },
         {
@@ -82,6 +90,7 @@ const tabList = {
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
+            category: "Smarphones"
 
         },
         {
@@ -90,6 +99,8 @@ const tabList = {
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
+            category: "Smarphones"
+
 
         },
     ]
