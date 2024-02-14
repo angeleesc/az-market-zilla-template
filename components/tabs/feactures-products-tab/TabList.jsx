@@ -6,7 +6,7 @@ export default function TabList({ items }) {
 
     return (
      
-    <div className='max-w-[1500px] m-auto p-8'>
+    <div className='max-w-[1500px] m-auto p-10'>
                 <div className='az-pruduct-tab-list'>
                 {
                     items && items.length && items.map((item) => {

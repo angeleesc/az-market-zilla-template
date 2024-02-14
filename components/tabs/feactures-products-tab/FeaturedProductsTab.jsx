@@ -29,7 +29,7 @@ const tabList = {
         {
             itemName: "Galaxy s21",
             thumnails: "/images/smartphone1.jpg",
-            value: 0.6,
+            value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
@@ -38,7 +38,7 @@ const tabList = {
         {
             itemName: "galaxy s22",
             thumnails: "/images/smartphone2.webp",
-            value: 3,
+            value: 4,
             category: "Smarphones",
             itemAddedInCart: false,
             itemLiked: false,
@@ -47,7 +47,7 @@ const tabList = {
         {
             itemName: "galaxy s23",
             thumnails: "/images/smartphone3.jpg",
-            value: 4.5,
+            value: 3.5,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
@@ -57,7 +57,7 @@ const tabList = {
         {
             itemName: "galaxy s24",
             thumnails: "/images/smartphone4.jpg",
-            value: 4.4,
+            value: 3,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
@@ -66,8 +66,8 @@ const tabList = {
         },
         {
             itemName: "galaxy s25",
-            thumnails: "/images/smartphone5.webp",
-            value: 0.5,
+            thumnails: "/images/smartphone6.png",
+            value: 2.5,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
@@ -76,8 +76,8 @@ const tabList = {
         },
         {
             itemName: "galaxy s26",
-            thumnails: "/images/smartphone5.webp",
-            value: 4.5,
+            thumnails: "/images/smartphone6.png",
+            value: 2,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
@@ -87,7 +87,7 @@ const tabList = {
         {
             itemName: "galaxy s27",
             thumnails: "/images/smartphone5.webp",
-            value: 4.5,
+            value: 1.5,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
@@ -95,8 +95,18 @@ const tabList = {
         },
         {
             itemName: "galaxy s28",
-            thumnails: "/images/smartphone5.webp",
-            value: 4.5,
+            thumnails: "/images/smartphone6.png",
+            value: 1,
+            itemAddedInCart: false,
+            itemLiked: false,
+            category: "Smarphones"
+
+
+        },
+        {
+            itemName: "galaxy s29",
+            thumnails: "/images/smartphone6.png",
+            value: 0.5,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
