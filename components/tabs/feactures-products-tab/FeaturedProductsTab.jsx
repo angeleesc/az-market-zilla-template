@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import FeaturedNavTabBar from './FeaturedNavTabBar'
 import "../tabs.scss"
 import TabList from './TabList'
+import "./feactured-product-tab.scss"
 // Smartphone
 // Computer
 // Electronic
@@ -61,7 +62,7 @@ const tabList = {
         },
         {
             itemName: "galaxy s25",
-            thumnails: "/images/smartphone5.jpg",
+            thumnails: "/images/smartphone5.webp",
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
@@ -69,7 +70,7 @@ const tabList = {
         },
         {
             itemName: "galaxy s26",
-            thumnails: "/images/smartphone5.jpg",
+            thumnails: "/images/smartphone5.webp",
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
@@ -77,7 +78,7 @@ const tabList = {
         },
         {
             itemName: "galaxy s27",
-            thumnails: "/images/smartphone5.jpg",
+            thumnails: "/images/smartphone5.webp",
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
@@ -85,7 +86,7 @@ const tabList = {
         },
         {
             itemName: "galaxy s28",
-            thumnails: "/images/smartphone5.jpg",
+            thumnails: "/images/smartphone5.webp",
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,

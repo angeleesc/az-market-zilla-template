@@ -1,0 +1,12 @@
+.az-pruduct-tab-list{
+    background-color: theme("colors.gray.500");
+    // width                : 100%;
+    // max-width: 400px;
+    // display     : flex;
+    // flex-wrap   : wrap;
+    display              : grid;
+    grid-auto-rows       : minmax(120px, 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(200px , 300px) );
+    margin: 0 auto;
+    
+}
