@@ -25,7 +25,7 @@ export default function ItemCard({ item }) {
 
             </div>
 
-            <div className='absolute bottom-0 left-0' >
+            <div className='absolute bottom-1 left-0 px-4' >
                 {
                     item.value && <StartCalification value={item.value}/> 
                 }

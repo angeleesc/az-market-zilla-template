@@ -29,7 +29,7 @@ const tabList = {
         {
             itemName: "Galaxy s21",
             thumnails: "/images/smartphone1.jpg",
-            value: 4.5,
+            value: 0.6,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
@@ -57,7 +57,7 @@ const tabList = {
         {
             itemName: "galaxy s24",
             thumnails: "/images/smartphone4.jpg",
-            value: 4.5,
+            value: 4.4,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
@@ -67,7 +67,7 @@ const tabList = {
         {
             itemName: "galaxy s25",
             thumnails: "/images/smartphone5.webp",
-            value: 4.5,
+            value: 0.5,
             itemAddedInCart: false,
             itemLiked: false,
             category: "Smarphones"
