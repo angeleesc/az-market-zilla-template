@@ -26,7 +26,7 @@ const tabOptions = [
 const tabList = {
     "Smartphone":[
         {
-            itemName: "galaxy s21",
+            itemName: "Galaxy s21",
             thumnails: "/images/smartphone1.jpg",
             value: 4.5,
             itemAddedInCart: false,
@@ -34,38 +34,63 @@ const tabList = {
             category: "Smarphones"
 
         },
-        // {
-        //     itemName: "galaxy s21",
-        //     thumnails: "/images/smartphone2.jpg",
-        //     value: 4.5,
-        //     itemAddedInCart: false,
-        //     itemLiked: false,
+        {
+            itemName: "galaxy s22",
+            thumnails: "/images/smartphone2.webp",
+            value: 3,
+            category: "Smarphones",
+            itemAddedInCart: false,
+            itemLiked: false,
 
-        // },
-        // {
-        //     itemName: "galaxy s21",
-        //     thumnails: "/images/smartphone3.jpg",
-        //     value: 4.5,
-        //     itemAddedInCart: false,
-        //     itemLiked: false,
+        },
+        {
+            itemName: "galaxy s23",
+            thumnails: "/images/smartphone3.jpg",
+            value: 4.5,
+            itemAddedInCart: false,
+            itemLiked: false,
 
-        // },
-        // {
-        //     itemName: "galaxy s21",
-        //     thumnails: "/images/smartphone4.jpg",
-        //     value: 4.5,
-        //     itemAddedInCart: false,
-        //     itemLiked: false,
+        },
+        {
+            itemName: "galaxy s24",
+            thumnails: "/images/smartphone4.jpg",
+            value: 4.5,
+            itemAddedInCart: false,
+            itemLiked: false,
 
-        // },
-        // {
-        //     itemName: "galaxy s21",
-        //     thumnails: "/images/smartphone5.jpg",
-        //     value: 4.5,
-        //     itemAddedInCart: false,
-        //     itemLiked: false,
+        },
+        {
+            itemName: "galaxy s25",
+            thumnails: "/images/smartphone5.jpg",
+            value: 4.5,
+            itemAddedInCart: false,
+            itemLiked: false,
 
-        // },
+        },
+        {
+            itemName: "galaxy s26",
+            thumnails: "/images/smartphone5.jpg",
+            value: 4.5,
+            itemAddedInCart: false,
+            itemLiked: false,
+
+        },
+        {
+            itemName: "galaxy s27",
+            thumnails: "/images/smartphone5.jpg",
+            value: 4.5,
+            itemAddedInCart: false,
+            itemLiked: false,
+
+        },
+        {
+            itemName: "galaxy s28",
+            thumnails: "/images/smartphone5.jpg",
+            value: 4.5,
+            itemAddedInCart: false,
+            itemLiked: false,
+
+        },
     ]
 }
 export default function FeaturedProductsTab() {
