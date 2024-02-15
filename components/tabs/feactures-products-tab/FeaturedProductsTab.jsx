@@ -32,7 +32,8 @@ const tabList = {
             value: 4.5,
             itemAddedInCart: false,
             itemLiked: false,
-            category: "Smarphones"
+            category: "Smarphones",
+            price: 285.46
 
         },
         {
@@ -42,7 +43,7 @@ const tabList = {
             category: "Smarphones",
             itemAddedInCart: false,
             itemLiked: false,
-
+            price: 1000.65
         },
         {
             itemName: "galaxy s23",
@@ -50,7 +51,8 @@ const tabList = {
             value: 3.5,
             itemAddedInCart: false,
             itemLiked: false,
-            category: "Smarphones"
+            category: "Smarphones",
+            price: 1
 
 
         },
@@ -60,7 +62,8 @@ const tabList = {
             value: 3,
             itemAddedInCart: false,
             itemLiked: false,
-            category: "Smarphones"
+            category: "Smarphones",
+            price: 2.65
 
 
         },
@@ -70,7 +73,8 @@ const tabList = {
             value: 2.5,
             itemAddedInCart: false,
             itemLiked: false,
-            category: "Smarphones"
+            category: "Smarphones",
+            price: 32.36
 
 
         },
@@ -80,7 +84,8 @@ const tabList = {
             value: 2,
             itemAddedInCart: false,
             itemLiked: false,
-            category: "Smarphones"
+            category: "Smarphones",
+            price: 45.67
 
 
         },
@@ -90,7 +95,8 @@ const tabList = {
             value: 1.5,
             itemAddedInCart: false,
             itemLiked: false,
-            category: "Smarphones"
+            category: "Smarphones",
+            price: 845.67,
 
         },
         {
@@ -99,7 +105,8 @@ const tabList = {
             value: 1,
             itemAddedInCart: false,
             itemLiked: false,
-            category: "Smarphones"
+            category: "Smarphones",
+            price: 600.00
 
 
         },
@@ -109,7 +116,8 @@ const tabList = {
             value: 0.5,
             itemAddedInCart: false,
             itemLiked: false,
-            category: "Smarphones"
+            category: "Smarphones",
+            price:340.67
 
 
         },

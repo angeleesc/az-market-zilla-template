@@ -7,8 +7,8 @@ export default function FeaturedNavTabBar({ currentTab, updateTab, TabOptions })
 
 
   return (
-    <nav className='container'>
-      <Row>
+    <nav className='px-[60px]'>
+    
         <ul className='w-full flex justify-center flex-wrap min-h-16 border-b border-b-gray-300 mb-4'>
 
           {
@@ -54,7 +54,7 @@ export default function FeaturedNavTabBar({ currentTab, updateTab, TabOptions })
             })
           }
         </ul>
-      </Row>
+    
     </nav>
   )
 }

@@ -117,7 +117,5 @@ export default function StartCalification({ value }) {
 
   }
 
-  return (
-    <div>{value}</div>
-  )
+  
 }
