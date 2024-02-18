@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
+import { FaXTwitter, FaFacebook, FaInstagram, FaPinterest, FaPaypal, FaApplePay, FaGooglePay, FaAmazonPay,  } from "react-icons/fa6"
+import {SiPayoneer} from "react-icons/si"
+import { RiVisaLine } from "react-icons/ri";
 
 export default function Footer() {
     return (
         <footer className={`
         px-[60px] py-[20px]
          bg-theme-darck
-          flex fl
           [&_ul]:p-0
             [&_a]:text-gray-400
                 [&_a]:no-underline
@@ -64,18 +66,128 @@ export default function Footer() {
                         </li>
                         <li>
                             <Link href={"/"} className='hover:text-theme-primary'>
-                                Electrodomesticos
+                                trabaja con nosotro
                             </Link>
                         </li>
                     </ul>
                 </div>
                 <div className='max-w-[300px] min-w-[200px] grow text-white p-3'>
-                    coluna 3
+                    <ul>
+                        <li>
+                            <h6>
+                                Categorias
+                            </h6>
+                        </li>
+                        <li>
+                            <Link href={"/"} className='hover:text-theme-primary'>Electrodomestico</Link>
+                        </li>
+                        <li>
+                            <Link href={"/"} className='hover:text-theme-primary'>Audio</Link>
+                        </li>
+                        <li>
+                            <Link href={"/"} className='hover:text-theme-primary'>video</Link>
+                        </li>
+                        <li>
+                            <Link href={"/"} className='hover:text-theme-primary'>Deportes</Link>
+                        </li>
+                        <li>
+                            <Link href={"/"} className='hover:text-theme-primary'>Celulares & tablet</Link>
+                        </li>
+                    </ul>
                 </div>
                 <div className='max-w-[300px] min-w-[200px] grow text-white p-3'>
-                    coluna 4
+
+                    <ul>
+                        <li>
+                            <h6>Ususario</h6>
+                        </li>
+                        <li>
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                Mi perfil
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                Soporte
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                Personal
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                Mis pedidos
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <div className='flex justify-between flex-wrap w-full' >
+
+                <div className='p-3'>
+                    <h6 className='text-white'>Redes Sociales</h6>
+                    <ul className='flex flex-wrap mt-2 [&_a]:text-[18px]'>
+                        <li className='ml-0 mr-3'>
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                <FaFacebook />
+                            </Link>
+                        </li>
+                        <li className='mx-3'>
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                <FaXTwitter />
+                            </Link>
+                        </li>
+                        <li className='mx-3'>
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                <FaInstagram />
+                            </Link>
+                        </li>
+                        <li className='ml-3 mr-0'>
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                <FaPinterest />
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 className='text-white'>Medios de pago</h6>
+                    <ul className='flex flex-wrap mt-2 [&_a]:text-[18px]'>
+                        <li className='ml-0 mr-3 ' >
+                            <Link href={"/"} className='hover:text-theme-primary'>
+                                <SiPayoneer/>
+                            </Link>
+                        </li>
+                        <li className='mx-3' >
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                <FaAmazonPay/>
+                            </Link>
+                        </li>
+                        <li className='mx-3' >
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                <FaGooglePay/>
+                            </Link>
+                        </li>
+                        <li className='mx-3' >
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                <FaPaypal/>
+                            </Link>
+                        </li>
+                        <li className='mr-0 ml-3' >
+                            <Link href={"/"} className='hover:text-theme-primary' >
+                                <RiVisaLine/>
+                            </Link>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div className='w-full bg-gray-700 h-[1px] mx-3' ></div>
+        <div className='w-full flex justify-center my-3'>
+        <p>@AngelZTemplate - 2024 All Right Reserved</p>
+        </div>
         </footer>
     )
 }
