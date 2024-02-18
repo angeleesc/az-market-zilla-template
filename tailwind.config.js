@@ -12,6 +12,7 @@ module.exports = {
         "az-line-acent": "#ececec",
         "paragraf-color": "#6d6d73",
         "theme-primary": "#09bafa",
+        "theme-darck": "#10181d",
         "theme-primary-shadow": "#0094d1",
         "theme-primary-tins": "#4bc1fb"
 
