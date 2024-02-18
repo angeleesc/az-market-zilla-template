@@ -153,6 +153,29 @@ const handlerNext = useCallback(() => {
                 ref={swiperRef}
                 loop
                 modules={[ Navigation, Pagination]}
+                breakpoints={
+                  {
+                    500:{
+                      slidesPerView: 1
+                    },
+                    800:{
+                      slidesPerView: 2
+                    },
+                    1200:{
+                      slidesPerView: 3
+                    },
+                    1400:{
+                      slidesPerView: 4
+                    },
+                    1600:{
+                      slidesPerView: 5
+                    },
+                    1800:{
+                      slidesPerView: 6,
+                      width:1800
+                    }
+                  }
+                }
             >
 
             {
