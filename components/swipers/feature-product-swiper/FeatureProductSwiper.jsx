@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 import ItemCard from '@/components/cards/Item-card/ItemCard';
-
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
+import "./featured-products-swiper.scss"
 
 const topTredingProducs = [
   {
@@ -121,13 +122,27 @@ export default function FeatureProductSwiper({sectionId}) {
 
   const  swiperRef = useRef(null)
 
+  const handlerPev = useCallback(() => {
+    if (!swiperRef.current)
+        return
+    swiperRef.current.swiper.slidePrev()
+})
+
+const handlerNext = useCallback(() => {
+
+    if (!swiperRef.current)
+        return
+    swiperRef.current.swiper.slideNext()
+
+})
+
   useEffect(()=>{})
 
   return (
-    <div className='px-[60px] mx-6 relative'>
+    <div className='px-[60px] my-6 relative  az-products-swiper'>
         <Swiper
                 spaceBetween={50}
-                slidesPerView={1}
+                slidesPerView={4}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 navigation={{
@@ -152,6 +167,12 @@ export default function FeatureProductSwiper({sectionId}) {
 
 
             </Swiper>
+            <button className='az-hero-prev' onClick={handlerPev} >
+                <FaLongArrowAltLeft/>
+            </button>
+            <button className="az-hero-next" onClick={handlerNext} >
+                <FaLongArrowAltRight/>
+            </button>
       
     </div>
   )
