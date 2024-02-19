@@ -1,9 +1,11 @@
+"use client"
 import React, { useCallback, useEffect, useRef } from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 import ItemCard from '@/components/cards/Item-card/ItemCard';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
 import "./featured-products-swiper.scss"
+import 'swiper/css';
 
 const topTredingProducs = [
   {

@@ -25,7 +25,7 @@ export default function Footer() {
         `}>
 
             <div className='w-full flex flex-wrap justify-center md:justify-start' >
-                <h3 class="text-white font-sans text-[24px] font-bold w-full">Angel <span class="text-theme-primary">Zilla</span></h3>
+                <h3 className="text-white font-sans text-[24px] font-bold w-full">Angel <span className="text-theme-primary">Zilla</span></h3>
                 <div className='max-w-[300px] min-w-[200px] grow text-white p-3'>
                     <ul>
                         <li>
