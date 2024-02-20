@@ -15,7 +15,7 @@ export default function ProductDetailSwiper({ images, productId }) {
 
 
     return (
-        <div className='max-w-[600px] h-[300px] md:h-[600px]'>
+        <div className='max-w-[600px] flex justify-center h-[600px] md:h-[600px]'>
             <div className='w-full'>
                 <Swiper
                     spaceBetween={50}

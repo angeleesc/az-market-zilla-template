@@ -17,7 +17,7 @@ const images = [
 export default function ProductDetails() {
     return (
         <>
-            <div className='flex flex-wrap my-3 px-[60px]'>
+            <div className='flex flex-wrap justify-center my-3 px-[60px]'>
 
                 <div className='flex-grow min-w-[300px]'>
                     <ProductDetailSwiper images={images} productId={"galaxy-tab"} />
