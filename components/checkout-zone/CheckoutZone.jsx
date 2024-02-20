@@ -1,23 +1,33 @@
 import React from 'react'
 import './checkout-zone.scss'
 import StartCalification from '../star-calification/StartCalification'
+import ShopCounters from '../counters/shop-counters/ShopCounters'
 
 export default function CheckoutZone({ productId, title, price, offerPrice, calification }) {
     return (
         <>
             <h3>{title}</h3>
 
+            {
+                price && offerPrice ?
+                 <h4>
+                    <span className='font-semibold'>   {offerPrice}$ </span><del className='text-gray-500 text-[20px]'> {price}$ </del>
+                </h4> : price ? <div>
+                   {price}
+                </div> : null
+            }
 
-       <div  className='flex items-center'>
-       <div className='my-[20px] text-theme-primary text-[20px] flex'>
-                <StartCalification value={calification} />
+            <div className='flex items-center'>
+                <div className='my-[20px] text-theme-primary text-[20px] flex'>
+                    <StartCalification value={calification} />
+
+                </div>
+                <div className='ml-2 flex items-center'>
+                    <p className='m-0 p-0' >(20 rewies)</p>
+                </div>
 
             </div>
-            <div className='ml-2 flex items-center'>
-                <p className='m-0 p-0' >(20 rewies)</p>
-            </div>
-
-       </div>
+            <ShopCounters/>
             <div className='my-5 text-[24px]'>
                 <h4 className='text-[14px]'>
                     Selecionar Color

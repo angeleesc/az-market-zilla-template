@@ -18,13 +18,13 @@ const images = [
 export default function ProductDetails() {
     return (
         <>
-            <div className='flex flex-wrap justify-center min-h-[600px]  my-3 px-[60px]'>
+            <div className='flex flex-wrap justify-center items-center min-h-[600px]   my-3 px-[60px]'>
 
                 <div className='flex-grow min-w-[300px]'>
                     <ProductDetailSwiper images={images} productId={"galaxy-tab"} />
-                </div>
+                </div> 
                 <div className='flex-grow min-w-[300px]'>
-                    <CheckoutZone productId={"galaxy-tab"} title={"Galaxy tab s10"} calification={3}/>
+                    <CheckoutZone productId={"galaxy-tab"} title={"Galaxy tab s10"} calification={3} price={35.6} offerPrice={30.0}/>
                 </div>
 
             </div>
