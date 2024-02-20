@@ -28,6 +28,13 @@
 
 .az-product-details-swiper-thumnails{
     // background-color: red;
+
+    .swiper-slide{
+        // background-color: red;
+        border:  1px solid theme('colors.gray.200');
+        border-radius: 8px;
+    }
+
     & .swiper-slide-thumb-active{
         border: 1px solid theme('colors.theme-primary') !important;
         border-radius: 8px;
