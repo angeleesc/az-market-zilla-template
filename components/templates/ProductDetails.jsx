@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import ProductDetailSwiper from '../swipers/product-details-swiper/ProductDetailSwiper'
+import CheckoutZone from '../checkout-zone/CheckoutZone'
 
 const images = [
     "/images/product-details-1.jpg",
@@ -23,7 +24,7 @@ export default function ProductDetails() {
                     <ProductDetailSwiper images={images} productId={"galaxy-tab"} />
                 </div>
                 <div className='flex-grow min-w-[300px]'>
-                    seccion de detalles
+                    <CheckoutZone productId={"galaxy-tab"} title={"Galaxy tab s10"} calification={3}/>
                 </div>
 
             </div>
