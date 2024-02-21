@@ -18,12 +18,27 @@
 
         ul {
             li {
-
+ 
                 // background-color: red;
                 button {
-                    height          : 100%;
-                    background-color: red;
-                    padding         : 0 10px;
+                    height     : 100%;
+                    padding    : 0 10px;
+                    position   : relative;
+                    font-weight: 600
+                }
+
+                .info-tab-obtion-active {
+                    color: theme("colors.theme-primary");
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        position: absolute;
+                        bottom: -2px;
+                        background-color: theme("colors.theme-primary");
+                        left: 0;
+                    }
                 }
             }
         }

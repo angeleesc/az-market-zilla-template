@@ -12,7 +12,7 @@ const [currentTab, setcurrentTab] = useState("specifications")
 
   return (
     <div className='az-details-tabs-container'>
-        <InfoTabBar/>
+        <InfoTabBar currentOption={currentTab} updateOption={setcurrentTab}/>
         
     </div>
   )
