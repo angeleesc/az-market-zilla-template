@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {FaMinus, FaPlus} from "react-icons/fa6"
+import { FaMinus, FaPlus } from "react-icons/fa6"
 
 export default function ShopCounters({ }) {
     const [count, setCount] = useState(1)
@@ -32,8 +32,8 @@ export default function ShopCounters({ }) {
                 `}
 
                 onClick={addCount}>
-                    <FaPlus/>
-                </button>
+                <FaPlus />
+            </button>
             <input type="text"
                 className={
                     `
@@ -44,6 +44,7 @@ export default function ShopCounters({ }) {
                 border
                 border-gray-500
                 h-full  
+                
                 `
 
                 }
@@ -66,9 +67,19 @@ export default function ShopCounters({ }) {
             transition-colors
             border
             border-gray-500
+            flex
+            justify-center
+            items-center
+            
+            hover:bg-theme-primary
+                hover:text-white
+                rounded-e-[8px]
             `}
                 onClick={subtractionCount}
-            >quitar</button>
+            >
+
+                <FaMinus />
+            </button>
         </div>
     )
 }

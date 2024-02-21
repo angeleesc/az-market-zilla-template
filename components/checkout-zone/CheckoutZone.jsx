@@ -10,11 +10,11 @@ export default function CheckoutZone({ productId, title, price, offerPrice, cali
 
             {
                 price && offerPrice ?
-                 <h4>
-                    <span className='font-semibold'>   {offerPrice}$ </span><del className='text-gray-500 text-[20px]'> {price}$ </del>
-                </h4> : price ? <div>
-                   {price}
-                </div> : null
+                    <h4>
+                        <span className='font-semibold'>   {offerPrice}$ </span><del className='text-gray-500 text-[20px]'> {price}$ </del>
+                    </h4> : price ? <div>
+                        {price}
+                    </div> : null
             }
 
             <div className='flex items-center'>
@@ -27,7 +27,7 @@ export default function CheckoutZone({ productId, title, price, offerPrice, cali
                 </div>
 
             </div>
-            <ShopCounters/>
+            <ShopCounters />
             <div className='my-5 text-[24px]'>
                 <h4 className='text-[14px]'>
                     Selecionar Color
@@ -51,6 +51,9 @@ export default function CheckoutZone({ productId, title, price, offerPrice, cali
                     <li className='bg-blue-600' ></li>
                     <li className='bg-red-500'></li> </ul>
             </div>
+            <button className='w-[180px] h-[50px] flex justify-center items-center text-white bg-theme-primary transition-colors hover:bg-theme-primary-shadow '>
+                <p className='p-0 m-0'>Agregar al carrito</p>
+            </button>
 
         </>
     )
