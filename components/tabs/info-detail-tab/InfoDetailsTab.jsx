@@ -16,6 +16,7 @@ export default function InfoDetailsTab({ specifications, info, reviews,  product
   info
   reviews
 
+  
 
 
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import SubObjetTemplate from './SubobjetTemplate'
 
-export default function SpecificationsTab({ data , producId }) {
+export default function SpecificationsTab({ data, producId }) {
 
     const notSpecialCaracterREgEx = /[^a-zA-Z0-9 ]/g
 
@@ -10,9 +10,13 @@ export default function SpecificationsTab({ data , producId }) {
 
         const Campo = Object.keys(data)
 
-        return Campo.map(()=>{})
-            
-                  
+        return Campo.map((campo, i) => {
+            return <React.Fragment key={producId+"pesch"+i}>
+                <SubObjetTemplate ObjetData={data[campo]} campo = {campo} />
+            </React.Fragment>
+        })
+
+
     }
 
     return <div>

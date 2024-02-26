@@ -51,7 +51,7 @@ const spech = {
         "carga rápida": true,
         "carga inalámbrica": true
     },
-    "sistema_operativo": "Android 12 con One UI 4.0",
+    "sistema operativo": "Android 12 con One UI 4.0",
     "dimensiones": {
         "alto": "28.8 cm",
         "ancho": "18.5 cm",
