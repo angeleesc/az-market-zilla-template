@@ -101,7 +101,7 @@ export default function ProductDetails() {
                 </div>
 
             </div>
-            <InfoDetailsTab specifications={spech} info={description} reviews={reviews}/>
+            <InfoDetailsTab specifications={spech} info={description} reviews={reviews} productId={"galaxy-tab"}/>
         </>
     )
 }

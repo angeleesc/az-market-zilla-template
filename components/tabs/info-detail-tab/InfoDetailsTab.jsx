@@ -8,7 +8,7 @@ import InfoTab from './InfoTab'
 
 
 
-export default function InfoDetailsTab({ specifications, info, reviews }) {
+export default function InfoDetailsTab({ specifications, info, reviews,  productId }) {
 
   const [currentTab, setcurrentTab] = useState("specifications")
 
@@ -16,13 +16,13 @@ export default function InfoDetailsTab({ specifications, info, reviews }) {
   info
   reviews
 
-  
+
 
   return (
     <div className='az-details-tabs-container'>
       <InfoTabBar currentOption={currentTab} updateOption={setcurrentTab} />
       {
-        currentTab == "specifications" && <SpecificationsTab data={specifications}/>
+        currentTab == "specifications" && <SpecificationsTab data={specifications} producId={productId}/>
       }
       {
         currentTab == "info" && <InfoTab data ={info}/>
