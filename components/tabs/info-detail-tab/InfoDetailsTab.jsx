@@ -16,18 +16,19 @@ export default function InfoDetailsTab({ specifications, info, reviews }) {
   info
   reviews
 
+  
 
   return (
     <div className='az-details-tabs-container'>
       <InfoTabBar currentOption={currentTab} updateOption={setcurrentTab} />
       {
-        currentTab == "specifications" && <SpecificationsTab />
+        currentTab == "specifications" && <SpecificationsTab data={specifications}/>
       }
       {
-        currentTab == "info" && <InfoTab/>
+        currentTab == "info" && <InfoTab data ={info}/>
       }
       {
-        currentTab == "reviews" && <RewiesTabs/>
+        currentTab == "reviews" && <RewiesTabs data={reviews}/>
       }
 
     </div>
