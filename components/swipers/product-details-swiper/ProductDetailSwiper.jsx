@@ -22,8 +22,8 @@ export default function ProductDetailSwiper({ images, productId }) {
                 <Swiper
                     spaceBetween={50}
                     slidesPerView={1}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log("swiper clix")}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log("swiper clix")}
                     modules={[Navigation, A11y, Pagination, Thumbs]}
                     loop
                     // navigation={true}
@@ -48,7 +48,7 @@ export default function ProductDetailSwiper({ images, productId }) {
                 <Swiper
                     spaceBetween={10}
                     slidesPerView={5}
-                    onSlideChange={() => console.log('slide change')}
+                    // onSlideChange={() => console.log('slide change')}
                     onSwiper={setActiveThumbs}
 
                     modules={[Navigation, A11y, Pagination, Thumbs]}

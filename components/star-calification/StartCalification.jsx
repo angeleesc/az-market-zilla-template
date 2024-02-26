@@ -5,9 +5,9 @@ import {
 
 export default function StartCalification({ value }) {
 
-  console.log("valor", value)
+  // console.log("valor", value)
 
-  if (value => 0.5 && value < 1) console.log("el producto vale media estrella")
+  // if (value => 0.5 && value < 1) console.log("el producto vale media estrella")
 
   switch (true) {
 
