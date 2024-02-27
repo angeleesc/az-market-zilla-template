@@ -75,7 +75,7 @@ const description = `
 </div>
 `
 
-const reviews  = [
+const reviews = [
     { "idDeUsuario": "1a2b3c", "nombreDeUsuario": "Ana", "puntuacion": 4.5, "review": "Excelente tablet, gran rendimiento." },
     { "idDeUsuario": "4d5e6f", "nombreDeUsuario": "Juan", "puntuacion": 4.8, "review": "Muy contento con la calidad de la pantalla." },
     { "idDeUsuario": "7g8h9i", "nombreDeUsuario": "María", "puntuacion": 4.3, "review": "Batería de larga duración, perfecta para viajes." },
@@ -101,7 +101,7 @@ export default function ProductDetails() {
                 </div>
 
             </div>
-            <InfoDetailsTab specifications={spech} info={description} reviews={reviews} productId={"galaxy-tab"}/>
+            <InfoDetailsTab specifications={spech} info={description} reviews={reviews} productId={"galaxy-tab"} />
         </>
     )
 }
