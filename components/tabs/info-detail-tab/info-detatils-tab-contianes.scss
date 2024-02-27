@@ -43,4 +43,30 @@
             }
         }
     }
+    .info-section{
+        // background-color: blue;
+        h1, h2, h3, h4, h5 ,h6{
+            color: theme("colors.theme-primary");
+        
+        }
+
+        strong{
+            color:  theme("colors.theme-primary-shadow");
+        }
+
+        & >div{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            padding: 15px 0;
+        }
+    }
 }
+
+
+
