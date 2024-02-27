@@ -78,7 +78,8 @@ function GerericObjetTemplate({ campo, value }) {
             <ul className='m-0 p-0'>
                 {
                     keys.map((kay, i) => {
-                        return <li className='w-full grid grid-cols-2'>
+                        // eslint-disable-next-line react/jsx-key
+                        return <li className='w-full grid grid-cols-2' key={kay+i}>
                             <div>
                                 <h6>{kay}</h6>
                             </div>

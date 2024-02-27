@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function InfoTab() {
+export default function InfoTab({productId, data}) {
   return (
     <div>
-        <h4>info tab</h4>
+       {data}
     </div>
   )
 }
