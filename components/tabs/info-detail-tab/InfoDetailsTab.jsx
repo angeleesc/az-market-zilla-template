@@ -29,7 +29,7 @@ export default function InfoDetailsTab({ specifications, info, reviews,  product
         currentTab == "info" && <InfoTab data ={info}/>
       }
       {
-        currentTab == "reviews" && <RewiesTabs data={reviews}/>
+        currentTab == "reviews" && <RewiesTabs data={reviews} producId={productId}/>
       }
 
     </div>
