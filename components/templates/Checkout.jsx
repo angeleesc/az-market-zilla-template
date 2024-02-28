@@ -6,6 +6,13 @@ export default function Checkout() {
 
 
   return (
-<CheckoutForm/>
+    <div className='flex justify-center py-[20px]'>
+      <div className='flex-grow flex justify-center'>
+        <CheckoutForm />
+      </div>
+      <div className='flex-grow'>
+        seccion de factura
+      </div>
+    </div>
   )
 }
