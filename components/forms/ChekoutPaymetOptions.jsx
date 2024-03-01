@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function ChekoutPaymetOptions({ register, current, option }) {
     return (
-        <div className=' az-chekout-payment-option'>
-            forma de pago
-            <div className='flex flex-wrap w-full'>
+        <div className=' az-chekout-payment-option mt-4'>
+            <p>forma de pago</p>
+            <div className='flex flex-wrap w-full '>
                 <label className='az-chekout-payment-radio'>
                     <input value={"card"} type="radio" {...register} />
                     <span>Tarjeta</span>

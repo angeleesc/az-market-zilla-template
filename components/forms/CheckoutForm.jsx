@@ -5,7 +5,11 @@ import ChekoutPaymetOptions from './ChekoutPaymetOptions'
 
 export default function CheckoutForm() {
 
-    const { register, handleSubmit, formState: { errors } } = useForm()
+    const { register, handleSubmit, formState: { errors }, watch } = useForm()
+
+    const chekoutPaymetnOption = watch("paymentmethod")
+
+    console.log(chekoutPaymetnOption)
 
     return (
         <form action="" className=' w-full max-w-[650px] p-4 az-from-zone'>
@@ -34,8 +38,8 @@ export default function CheckoutForm() {
 
             </div>
             <h3>Datos de pago</h3>
-            <ChekoutPaymetOptions register={register("paymentmethod")}/>
-          
+            <ChekoutPaymetOptions register={register("paymentmethod")} />
+
 
 
         </form>
