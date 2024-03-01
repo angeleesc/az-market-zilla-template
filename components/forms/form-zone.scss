@@ -1,0 +1,44 @@
+.az-from-zone {
+    // background-color: red;
+
+    h3 {
+        font-size    : 24px;
+        padding      : 20px 0;
+        border-bottom: 1px solid theme("colors.gray.400");
+        position     : relative;
+
+        &::after {
+            content         : '';
+            display         : block;
+            width           : 100px;
+            height          : 2px;
+            background-color: theme("colors.theme-primary");
+            position        : absolute;
+            bottom          : -2px;
+            left            : 0;
+        }
+
+    }
+
+
+    .az-form-controls {
+        label {
+            display       : flex;
+            flex-direction: column;
+        }
+
+        input[type="text"] {
+            border       : 1.5px solid theme("colors.gray.500");
+            padding      : 8px 16px;
+            border-radius: 100px;
+
+            &:focus{
+                outline: 1.5px solid theme("colors.theme-primary");
+            }
+        }
+    }
+    
+}
+.az-chekout-payment-option{
+    background-color: blue;
+}
