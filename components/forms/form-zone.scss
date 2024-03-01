@@ -32,25 +32,35 @@
             padding      : 8px 16px;
             border-radius: 100px;
 
-            &:focus{
+            &:focus {
                 outline: 1.5px solid theme("colors.theme-primary");
             }
         }
     }
-    
+
 }
-.az-chekout-payment-option{
-    .az-chekout-payment-radio{
-       flex-grow: 1;
-        min-width: 125px;
-        margin: 5px;
-        
-        input[type="radio"]{
+
+.az-chekout-payment-option {
+    .az-chekout-payment-radio {
+        flex-grow       : 1;
+        min-width       : 125px;
+        margin          : 5px;
+        background-color: orange;
+
+        input[type="radio"] {
             background-color: orange;
             // display: none;
+            display         : none;
         }
 
-        input[type="radio"]:checked + span{
+        input[type="radio"]+span {
+            // width: 100%;
+            background-color: red;
+            width           : 100%;
+            display         : block;
+        }
+
+        input[type="radio"]:checked+span {
             background-color: blue;
         }
     }
