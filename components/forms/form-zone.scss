@@ -40,5 +40,18 @@
     
 }
 .az-chekout-payment-option{
-    background-color: blue;
+    .az-chekout-payment-radio{
+       flex-grow: 1;
+        min-width: 125px;
+        margin: 5px;
+        
+        input[type="radio"]{
+            background-color: orange;
+            // display: none;
+        }
+
+        input[type="radio"]:checked + span{
+            background-color: blue;
+        }
+    }
 }
