@@ -42,6 +42,7 @@ export default function ChekoutPaymetOptions({ register, current, option }) {
                             <SiZelle/>
                         </span>
                     </span>
+                    
                 </label>
 
             </div>

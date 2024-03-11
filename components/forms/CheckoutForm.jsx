@@ -4,6 +4,7 @@ import "./form-zone.scss"
 import ChekoutPaymetOptions from './ChekoutPaymetOptions'
 import { FaCcVisa, FaCcMastercard, } from "react-icons/fa6"
 import { SiAmericanexpress } from "react-icons/si"
+import CvvIcons from '../icons/CvvIcons'
 
 export default function CheckoutForm() {
 
@@ -70,6 +71,38 @@ export default function CheckoutForm() {
                     </div>
                 </label>
             </div>
+            <div className='w-full mt-3 flex' >
+                <div className='az-form-controls my-2 flex-grow ml-1' >
+                    <label>
+                        <span>Fecha de Expiracio *</span>
+                        <input type="text" {...register("OwnerCard")} />
+                    </label>
+                </div>
+                <div className='az-form-controls my-2 flex-grow ml-1' >
+                    <label>
+                        <span> CVC *</span>
+                        <div className='flex relative items-center'>
+                            <input className='pr-8 w-full' type="text" {...register("cvc")} />
+                            <div className='absolute right-2'>
+                                <CvvIcons />
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div className='w-full mt-3' >
+                <div className='az-form-controls my-2 flex-grow ml-1' >
+                    <label>
+                        <span>Direcion de la tarjeta *</span>
+                        <input type="text" {...register("direction")} />
+                    </label>
+                </div>
+            </div>
+
+            <button className='w-full mt-5 p-3 bg-theme-primary text-white rounded-[16px] hover:bg-theme-primary-shadow' >
+                Pagar
+            </button>
 
         </form>
     )
